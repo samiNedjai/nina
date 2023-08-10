@@ -8,16 +8,7 @@
 	<meta name="description" content="Photographe professionnelle à Bordeaux spécialisée dans les portraits, les mariages et les événements en direct."> 
 	<!-- Balise de titre -->
 	<title>Nina Carducci - Photographe professionnelle à Bordeaux</title> 
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
 	<!-- Ajoutez la structure JSON-LD pour les données structurées -->
     <script type="application/ld+json">
         {
@@ -47,6 +38,20 @@
           "url": "https://saminedjai.github.io/nina/"
         }
     </script>
+	<!-- En-têtes de cache pour les ressources statiques -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <meta http-equiv="Expires" content="Mon, 01 Jan 2024 00:00:00 GMT">
+	
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	
+	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.js"></script>
+	<script src="./assets/scripts.js"></script>
 </head>
 <body>
 <div class="top-header">
@@ -64,6 +69,9 @@
 	</nav>
 </div>
 <!-- Remplacement DIV >>> HEADER -->
+<!-- Ajout attribut ALT aux images -->
+<!-- Ajout attribut aria-label="" pour la description des boutons -->
+
 <header id="header">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -82,11 +90,11 @@
 				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="...">
 			</div>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label=".....">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label=".....">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Next</span>
 		</button>
@@ -94,43 +102,45 @@
 </header>
 <!-- AJOUT MAIN  -->
 <main>
-	<div id="about">
+	<!-- remplacier div par séction -->
+	<séction id="about">
 		<div class="picture left">
 			<img src="./assets/images/nina.png">
 		</div>
 		<div id="about-me">
 			<h3 class="about-me__title">A propos de moi</h3>
-			<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
-	</div>
-	<div id="gallery">
-		<h3 class="title">Portfolio</h3>
+	</séction>
+	<!-- remplacier div par séction -->
+	<séction id="gallery">
+		<!-- h3 par h2 -->
+		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"/>
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="..."/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="..."/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="..."/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="..."/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg" alt="..."/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt="..."/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg" alt="..."/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="..."/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="..."/>
 			</div>
 		</div>
-		<div class="quote">
+		<!-- remplacier div par aside -->
+		<aside class="quote">
 			<figure>
-				<blockquote>
-					<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
-				</blockquote>
+				<blockquote class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
-		</div>
-	</div>
+		</aside>
+	</séction>
 	<div id="services">
-		<h3 class="title">Mes services</h3>
+		<h2 class="title">Mes services</h2>
 		<div class="container">
 			<div class="service">
 				<div class="service__description">
@@ -138,7 +148,7 @@
 					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 				</div>
 				<div class="service__price">
-					<h4>350€/demi journée</h4>
+					<h3>350€/demi journée</h3>
 					<span>Matériel, déplacement inclus</span>
 				</div>
 
@@ -149,7 +159,7 @@
 					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 				</div>
 				<div class="service__price">
-					<h4>50€/photo</h4>
+					<h3>50€/photo</h3>
 					<span>2 AR par photo</span>
 				</div>
 			</div>
@@ -167,9 +177,7 @@
 	</div>
 	<div class="quote">
 		<figure>
-			<blockquote>
-				<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
-			</blockquote>
+			<blockquote  class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vibrer</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
@@ -189,7 +197,7 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera.png">
+				<img src="./assets/images/camera.png" alt="...">
 			</div>
 		</div>
 	</div>
